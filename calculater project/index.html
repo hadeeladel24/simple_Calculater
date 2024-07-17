@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link href="https://fontawesome.com/icons/delete-left?f=classic&s=regular" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <nav id="nav">
+        <h1>CALCULATER</h1>
+        <ul>
+            <li onclick="modechange()">dark mode</li>
+            <li onclick="modechange()">light mode</li>
+        </ul>
+    </nav>
+    <div class="calculater">
+    <form action="" method="post" class="calc">
+        <input type="text" value="0" class="text" id="display" readonly>
+        <div class="cc">
+        <input type="button" value="^"  onclick="input('**')">
+        <input type="button" value="√" onclick="squareRoot()">
+        <input type="button" value="×" onclick="input('*')">
+        <input type="button" value="÷" onclick="input('/')">
+        <input type="button" value="1" onclick="input('1')">
+        <input type="button" value="2" onclick="input('2')">
+        <input type="button" value="3" onclick="input('3')">
+        <input type="button" value="-" onclick="input('-')">
+        <input type="button" value="4" onclick="input('4')">
+        <input type="button" value="5" onclick="input('5')">
+        <input type="button" value="6" onclick="input('6')">
+        <input type="button" value="+" onclick="input('+')">
+        <input type="button" value="7" onclick="input('7')">
+        <input type="button" value="8" onclick="input('8')">
+        <input type="button" value="9" onclick="input('9')">
+        <input type="button" value="0" onclick="input('0')">
+        <input type="button" value="." onclick="input('.')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="DEL" onclick="clearDisplay()">
+    </div>
+    </form>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
